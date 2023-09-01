@@ -1,0 +1,60 @@
+backend 
+
+client-server Model
+
+1: frontend developement => UI
+2: Backend developement => process of fetching/storing and processing 
+
+frontend : html css js react redux next vue vite angular knockout js
+backend : 
+java : Spring , SpringBoot, Hybernate , strusts etc
+.net : MVC framework , Entity framework 
+php : Laravel,CI,Symphony , Wordpress(content management system  CMS), Drupal
+Golang :
+RoR :
+Js : Express js , Next js , Ember js
+
+
+js in backend :
+MERN : Mongo Express React Node
+MEAN : Mongo Express Angular Node
+
+Node : Javascript environment  (V8 Engiene) V8 is a opensource , Runtime Environment
+Node js is written in (61.8%% written in js and 26%is written in c++)
+
+Express : 
+
+Databases :
+^-SQL : MySql, MSSQL, Postgrace Ql
+^- No SQL : Mongo db , Cassandra db , Graph ql 
+
+
+Mongo : MQL
+
+LOW LEVEL LANGUAGE  : Machines C C++ Pascal
+HIGH LEVEL LANGUAGE : They work on OS : js php java
+
+
+Java : JRE(Java Runtime Environment)
+
+
+NPM : 
+
+NODE JS : 
+
+built in :
+ 1> OS mODULE :
+    ->
+ 2> File System(FS module)
+ 3> HTTP module
+ 4> Security (crypto module)
+ 5>
+
+
+ Events module
+
+element.addEventListener(callbackFn);
+onClick={callbackFn}
+
+Event Emitter : Emits the event
+Event Listener : Receives/Listens the event
