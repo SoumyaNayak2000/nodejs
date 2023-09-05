@@ -70,7 +70,7 @@ const readFile = () => {
             return;
         }
         console.log("FILE DATA", fileData.toString());
-        // return fileData.toString();
+        return fileData.toString();
     })
 };
 
@@ -83,16 +83,35 @@ const updateFile = () => {
      * 3. Write the file
      */
 
+
+    // fs.readFile("logs.txt",(err,fileData)=>{
+    //     if(err){
+    //         console.log(err);
+    //         return;
+    //     }
+    //     let contents = fileData.toString();
+    //     contents = contents + "file is updated"
+    //     console.log(fileData.toString())
+    //     fs.writeFile("logs.txt",contents,(err)=>{
+    //         if(err){
+    //             console.log(err);
+    //             return;
+    //         }
+    //     })
+    // })
+
     // const fileData = fs.readFileSync("logs.txt");
+    // console.log("fileData",fileData.toString());
 
     // let contents = fileData.toString();
     // contents = contents + "\nFILE IS EDITED USING FS MODULE";
+    // console.log(contents);
 
     // fs.writeFileSync("logs.txt", contents);
 
     // console.log("FILE EDITED SUCCESSFULLY");
 
-    fs.appendFileSync("logs.txt", "\nThis is new line with new method");
+    // fs.appendFileSync("logs.txt", "\nThis is new line with new method");
 };
 
 // updateFile();
@@ -106,14 +125,17 @@ const deleteFile = () => {
 
 let colorIndex = 0;
 
-const writeLogs = (color) => {
+const writeLogs = () => {
     const timeStamp = new Date();
     console.log(timeStamp)
+    const colors=["green","yellow","red"]
+    const color=colors[colorIndex]
     const logStr = timeStamp + " Signal changed to " + color + "\n";
+    // console.log(logStr)
     // 31/08/2023 21:41:00 Signal changed to Green
     fs.appendFileSync("signal.log", logStr);
 };
-writeLogs()
+// writeLogs()
 
 // setInterval(() => {
 //     writeLogs();
@@ -122,20 +144,20 @@ writeLogs()
 //     } else {
 //         colorIndex++;
 //     }
-// }, 5000);
+// }, 2000);
 
 /**
  * 1. Emit the event
  * 2. Listen the event
  */
 
-const myEmitter = new events.EventEmitter();
+// const myEmitter = new events.EventEmitter();
 
-const SIGNAL_CHANGE = 'SIGNAL_CHANGE';
+// const SIGNAL_CHANGE = 'SIGNAL_CHANGE';
 
-myEmitter.on(SIGNAL_CHANGE, writeLogs);
+// myEmitter.on(SIGNAL_CHANGE, writeLogs);
 
-const colors = ["Green", "Yellow", "Red"];
+// const colors = ["Green", "Yellow", "Red"];
 
 // setInterval(() => {
 //     myEmitter.emit(SIGNAL_CHANGE, colors[colorIndex]);
